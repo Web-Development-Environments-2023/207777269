@@ -6,179 +6,169 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="APMHyh5a"></script>
   <div id="menu">
-    <!-- <li><span>Tuvia Kravchik</span></li> -->
+    <li><span>Tuvia Kravchik</span></li>
     <li><a href="#about">About Me</a></li>
     <li><a href="#photos">My Photos</a></li>
     <li><a href="#playlist">My Playlist</a></li>
-    <li><a href="#like">Like</a></li>
     <li><a href="#qrcoder">QR code</a></li>
+    <li><a href="#like">Like</a></li>
     <li><a href="#spa">Q&A</a></li>
     <li><a href="#contact">Contact Me</a></li>
   </div>
 
-  <section id="about" class="section">
+  <section id="about" class="section dark-grey">
+
     <br />
     <br />
     <br />
     <br />
+    <span class="section-header">
+      About Me
+    </span>
     <br />
-    About Me
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <div class="about-container">
+      <img src="images/img3.jpg" class="about-img"  width="20%" height="20%">
+
+      <ul class="about-info">
+
+        <li>Tuvia Kravchik,</li>
+        <li>63/5 years old, born on 18/9/1959 in a Kibutz (Yad Mordechai).</li>
+        <li>Lives from age 1 in Beer Sheva</li>
+        <li>Have a Ph.D. in Mechanical Engineering (1994) and a B.A. in History (2021). Today learning for M.A. degree in History.</li>
+        <li>Hobbies and fields of interest: History (20th century), Reading, Enthusiastic fan of "Hapoel Beer Sheva" (football).</li>
+        <li>Admired figures: Churchill, Einstein, Herzl</li>
+        <li>Music: ABBA songs, Classic Music (Beethoven)</li>
+      </ul>
+    </div>
+
     <br />
     <br />
   </section>
 
-  <section id="photos" class="section">
+  <section id="photos" class="section light-grey">
+    <span class="section-header">
+      My Photos
+    </span>
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    My Photos
-    <br />
+    <div class="photosrow">
+      <div class="photoscol">
+        <img src="images/img5.jpeg" class="img-gallery" >
+        <img src="images/img1.jpeg" class="img-gallery">
+      </div>
+      <div class="photoscol">
+        <img src="images/img2.jpeg" class="img-gallery" >
+        <img src="images/img4.jpeg" class="img-gallery" >
+      </div>
+      <div class="photoscol">
+        <img src="images/img6.jpeg" class="img-gallery" >
+        <img src="images/img7.jpeg"  class="img-gallery">
+      </div>
+      <div class="photoscol">
+        <img src="images/img8.jpeg" class="img-gallery" >
+        <img src="images/img9.jpeg" class="img-gallery" >
+      </div>
+    </div>
     <br />
     <br />
   </section>
 
-  <section id="playlist" class="section">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+  <section id="playlist" class="section light-blue">
+    <span class="section-header">
     My Playlist
+    </span>
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4Tr0otuiQuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    </div>
+  </section>
+
+  <section id="qrcoder" class="section dark-grey">
+    <span class="section-header">
+      Scan my code
+    </span>
+    <br />
+    <br />
+    <img src="images/QR.png"  width="200" height="200">
+    <br />
+  </section>
+
+  <section id="like" class="section light-grey">
+    <span class="section-header">
+      Give me a like!
+    </span>
+    <br />
+    <br />
+    <div class="fb-like" data-href="https://web-development-environments-2023.github.io/207777269/" data-width="" data-layout="" data-action="" data-size="" data-share="false"></div>
+    <br />
+  </section>
+
+  <section id="spa" class="section light-blue">
+    <br />
+    <span class="section-header">
+      Q&A
+    </span>
     <br />
     <br />
     <br />
   </section>
 
-  <section id="like" class="section">
+  <section id="contact" class="section dark-grey">
+    <span class="section-header">
+      Contact Me
+    </span>
+    <br />
+    <span>
+      +972-50-6232119
+    </span>
     <br />
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    Give me a like
-    <br />
-    <br />
+    <div>
+      <p>Send email: tuvkra@zahav.net.il</p>
+      <form id="email-form">
+        <label for="from-email">From:</label>
+        <input type="email" id="from-email" required>
+      
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" >
+      
+        <label for="body">Message:</label>
+        <textarea id="mailbody" required></textarea>
+  
+        <button onclick="toggleEmojiDrawer()">Emojis</button>
+  
+        <div id="drawer" class="emoji-drawer hidden"> 
+          <div class="emoji" onclick="addEmoji(this.innerHTML)">😀</div>
+          <div class="emoji" onclick="addEmoji(this.innerHTML)">😃</div>
+          <div class="emoji" onclick="addEmoji(this.innerHTML)">😄</div>
+          <div class="emoji" onclick="addEmoji(this.innerHTML)">😁</div>
+          <div class="emoji" onclick="addEmoji(this.innerHTML)">😆</div>
+        </div>
+      
+        <button type="submit">Send Email</button>
+      </form>
+    </div>
+
     <br />
   </section>
 
-  <section id="qrcoder" class="section">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    Scan my code
-    <br />
-    <br />
-    <br />
-  </section>
+  <script type="text/javascript">
+    const form = document.querySelector('#email-form');
 
-  <section id="spa" class="section">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    ans
-    <br />
-    <br />
-    <br />
-  </section>
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
 
-  <section id="contact" class="section">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    Contact Me
-    <br />
-    <br />
-    <br />
-  </section>
+      const fromEmail = document.querySelector('#from-email').value;
+      const toEmail = "tuvkra@zahav.net.il";
+      const subject = document.querySelector('#subject').value;
+      const body = document.querySelector('#mailbody').value;
 
+      const emailContent = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = emailContent;
+    });
+  </script>
 
   <script type="text/javascript">
     $(function () {
@@ -193,6 +183,25 @@
       $('#menu').toggle($(this).scrollTop() > 1000)
     });​
   </script>
+
+<script>
+  function addEmoji(emoji) {
+  let inputEle = document.getElementById('mailbody');
+  
+  inputEle.value += emoji;
+}
+
+function toggleEmojiDrawer() {
+  let drawer = document.getElementById('drawer');
+  
+  if (drawer.classList.contains('hidden')) {
+    drawer.classList.remove('hidden');
+  } else {
+    drawer.classList.add('hidden');
+  }
+}
+</script>
+
 </body>
 
 </html>

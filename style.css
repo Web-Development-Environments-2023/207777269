@@ -1,9 +1,16 @@
 body
 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Didact Gothic', sans-serif;
 	color: #ffffff;
-	background-color: rgb(49, 50, 51);;
+	background-color: rgb(36, 37, 39);
 	font-size: large;
+}
+
+.section{
+	padding-top: 60px;
+	padding-bottom: 30px;
+	text-align: center;
+	width: 100%;
 }
 
 #menu
@@ -15,6 +22,9 @@ body
 	margin: 0;
 	padding: 0;
 	display: flex;
+	top: 0%;
+	right: 0;
+	left: 0;
 }
 /* 
 #menu li{ 
@@ -23,7 +33,7 @@ body
 
 #menu li span{ 
 	display: block;
-	color: #ffffff;
+	color: rgb(156, 180, 204);
 	text-decoration: none;
 	text-align: center;
 	padding: 20px 20px; 
@@ -47,6 +57,112 @@ li a:active {
 background-color: rgb(177, 183, 189);
 }
 
-#about{
-	background-color: rgb(177, 183, 189);
+
+/***************** photos grid **************/
+.photosrow {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .photoscol {
+	flex: 25%;
+	max-width: 23%;
+	padding: 0 4px;
+  }
+  
+  .photoscol img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.photoscol {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.photoscol {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
+
+  .section-header{
+	  padding-bottom: 20px;
+	  
+  }
+
+
+/************** sections background **************/
+
+.dark-grey{
+	background-color: rgb(59 60 62);
+	 /* rgb(59 60 62); */
 }
+
+.light-grey{
+	background-color: rgb(177, 183, 189);
+	 /* rgb(156, 180, 204); */
+}
+
+.light-blue{
+	background-color: rgb(156, 180, 204);
+}
+
+.about-container {
+	width: 100%;
+	overflow: hidden; /* This is important to clear the float */
+  }
+  
+.about-info{
+	list-style-type: none;
+	text-align: left;
+}
+.about-img {
+	float: left;
+	margin-right: 20px; /* This creates space between the image and text */
+  }
+
+  /***************** emoji ***************/
+  .emoji-drawer {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100px;
+
+    margin-bottom: 32px;
+    transition: opacity 0.2s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.emoji {
+    text-align: center;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.emoji:hover {
+    cursor: pointer;
+}
+
+#email-form{
+	display: inline-grid;
+}
+
+
+.img-gallery{
+	/* width: 50px; */
+	height: 340px;
+}
+
