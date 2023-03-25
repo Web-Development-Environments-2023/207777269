@@ -166,3 +166,7 @@ background-color: rgb(177, 183, 189);
 	height: 340px;
 }
 
+.qa{
+	direction: rtl;
+	text-align: right;
+}
